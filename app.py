@@ -3,7 +3,7 @@ from flask_cors import CORS  # Import CORS from flask_cors module
 import yfinance as yf
 
 app = Flask(__name__)
-CORS(app)  # Add this line to enable CORS for your Flask app
+CORS(app)  # Add this line to enable CORS for your Flask app and app
 
 def get_hist_data(symbol):
     stock = yf.Ticker(symbol)
